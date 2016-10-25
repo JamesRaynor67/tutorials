@@ -151,4 +151,5 @@ if __name__ == '__main__':
         if i % 20 == 0:
             print('cost: ', round(cost, 4))
             result = sess.run(merged, feed_dict)
-            writer.add_summary(result, i)
+            writer.add_summary(result, i)  
+    sess.close()
